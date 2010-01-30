@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+	
+	<title>MooTools MultiSelect Plugin</title>
+	
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/MultiSelect.css" media="screen" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/mootools-core.js"></script>
+	<script type="text/javascript" src="js/lighter/Lighter.js"></script>
+	<script type="text/javascript" src="Source/MultiSelect.js"></script>
+	<script type="text/javascript">
+	window.addEvent("domready", function() {
+		document.getElements('pre').light({ altLines: 'hover', mode: 'div' }); 
+	});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>MooTools MultiSelect Plugin</h1>
+	</div>
+	<div id="content">
+		<h2>Documentation</h2>
+		<div class="clear"></div>
+		
+		<h3>Class: MultiSelect</h3>
+		<p>
+			This plugin turns your checkbox set into one single multi-select dropdown menu - it actually moves your checkboxes into multi-select list so that your form is still working just as it was before. No server-side script modification needed!
+		</p>
+		<p>
+			You can also style MultiSelect the way you want with CSS provided with this plugin or just replace it with your own. CSS classes can be set with options, so you don't have to change your existing stylesheet.
+		</p>
+		<h4>MultiSelect method: constructor</h4>
+		<pre class="js">
+new MultiSelect(selector[, options]);
+</pre>
+		<h4>Arguments</h4>
+		<ol>
+			<li>selector - (<strong>string</strong>, <strong>required</strong>) CSS selector of the wrapper div</li>
+			<li>options - (<strong>object</strong>, optional) The MultiSelect options. See below</li>
+		</ol>
+		<h4>Options</h4>
+		<ol>
+			<li>boxes - (<strong>string</strong>: defaults to 'input[type=checkbox']) Checkbox selector</li>
+			<li>labels - (<strong>string</strong>: defauts to 'label') Label selector</li>
+			<li>monitorText - (<strong>string</strong>: defaults to ' selected') The text to be shown in the dropdown monitor</li>
+			<li>containerClass - (<strong>string</strong>: defaults to 'MultiSelect') CSS class (styling)</li>
+			<li>monitorClass - (<strong>string</strong>: defaults to 'monitor') CSS class (styling)</li>
+			<li>monitorActiveClass - (<strong>string</strong>: defaults to 'active') CSS class (styling)</li>
+			<li>itemSelectedClass: - (<strong>string</strong>: defaults to 'selected') CSS class (styling)</li>
+		</ol>
+		<h4>Returns</h4>
+		<ul>
+			<li> - <strong>MultiSelect</strong> - MultiSelect instance</li>
+		</ul>
+		<h3>MultiSelect Method: append</h3>
+		<p>
+			Append another checkbox set to turn it into multi-select dropdown. Usefull if you have content added dinamically or if you want to include another checkbox set with different container CSS id/class.
+		</p>
+		<pre class="js">
+myMultiSelect.append(selector);
+		</pre>
+		<h4>Arguments</h4>
+		<ol>
+			<li>selector - (<strong>string</strong>) - CSS selector of the container div</li>
+		</ol>
+		<div class="spacer"></div>
+		<h2>Demo</h2>
+		<div class="clear"></div>
+		<p>
+			Take a look <a href="demo.html">over here</a>.
+		</p>
+		<div class="spacer"></div>
+	</div>
+	<div id="footer">
+		&copy; Copyright Blaž Maležič, 2010.
+	</div>
+</body>
+</html>

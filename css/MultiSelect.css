@@ -1,0 +1,57 @@
+.MultiSelect {
+	font-size: 12px;
+	font-family: Helvetica, sans-serif;
+	display: block;
+	position: relative;
+}
+.MultiSelect .monitor {
+	background: url("img/monitor-left.png") top left no-repeat;
+	width: 455px;
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.MultiSelect .monitor div {
+	background: url("img/monitor-right.png") top right no-repeat;
+}
+.MultiSelect .monitor div div {
+	background: url("img/monitor-center.png") top right repeat-x;
+	padding: 1px 6px 0 6px;
+	margin: 0 4px;
+	width: 421px;
+}
+.MultiSelect .monitor.active { background: url("img/monitor-left-active.png") top left no-repeat; }
+.MultiSelect .monitor.active div { background: url("img/monitor-right-active.png") top right no-repeat; }
+.MultiSelect .monitor.active div div { background: url("img/monitor-center-active.png") top right repeat-x; }
+
+.MultiSelect ul {
+	position: absolute;
+	z-index: 1000;
+	top: 18px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 450px;
+	max-height: 260px;
+	overflow: hidden;
+	list-style: none;
+	background-color: #FFF;
+	border-top: 1px solid #ccc;
+	border-left: 3px solid #ccc;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	_height: 260px; /* IE */
+}
+.MultiSelect ul li {
+	padding: 0px 3px;
+}
+.MultiSelect ul li:hover,
+.MultiSelect ul li.selected:hover {
+	background-color: #6DBAF0;
+	color: white;
+}
+.MultiSelect ul li.selected {
+	background-color: #3875D7;
+	color: white;
+}

@@ -1,7 +1,7 @@
 name:  MultiSelect
 author:  BlazMalezic
 current:  1.0
-category:  Interface
-tags:  [forms, checkbox, dropdown, multi select]
+category:  Forms
+tags:  [forms, checkbox, dropdown, multi select, menu]
 docs:  http://users.skavt.net/bmalezic/MultiSelect
-demo:  http://users.skavt.net/bmalezic/MultiSelect/demo
+demo:  http://users.skavt.net/bmalezic/MultiSelect/demo.html

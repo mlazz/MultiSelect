@@ -7,7 +7,8 @@ This plugin turns your checkbox set into one single multi-select dropdown menu -
 
 You can also style MultiSelect the way you want with provided CSS or just replace it with your own. CSS classes can be set via options, so you don't have to change your existing stylesheet.
 
-UPDATE: Added win/mac images for styling your MultiSelect.
+UPDATE: Now supporting keyboard navigation - it behaves almost like an ordinary HTML select element!
+
 
 ![Screenshot](http://users.skavt.net/bmalezic/MultiSelect/screenshot.png)
 
@@ -66,6 +67,7 @@ You can also style MultiSelect the way you want with CSS provided with this plug
 5. monitorClass - (*string*: defaults to 'monitor') CSS class (styling)
 6. monitorActiveClass - (*string*: defaults to 'active') CSS class (styling)
 7. itemSelectedClass: - (*string*: defaults to 'selected') CSS class (styling)
+8. itemHoverClass: - (*string*: default to 'hover') CSS class (styling)
 
 #### Returns ####
 
@@ -120,3 +122,15 @@ Append another checkbox set to turn it into multi-select dropdown. Usefull if yo
 		e.stop();
 		myMultiSelect.append('.anotherCheckboxSet');
 	});
+
+## Changelog ##
+### 1.3 ###
+- partial code rewrite
+- added keyboard navigation support
+
+### 1.2 ###
+- added win/mac style images
+- CSS enhancements
+
+### 1.0 ###
+- initial release

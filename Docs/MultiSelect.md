@@ -21,11 +21,12 @@ You can also style MultiSelect the way you want with provided CSS or just replac
 #### Options ####
 1. boxes - (*string*: defaults to 'input[type=checkbox']) Checkbox selector
 2. labels - (*string*: defauts to 'label') Label selector
-3. monitorText - (*string*: defaults to ' selected') The text to be shown in the dropdown monitor (e.g. 'x *item(s) checked*')
+3. monitorText - (*string*: defaults to ' selected') The text to be shown in the dropdown monitor
 4. containerClass - (*string*: defaults to 'MultiSelect') CSS class (styling)
-4. monitorClass - (*string*: defaults to 'monitor') CSS class (styling)
-5. monitorActiveClass - (*string*: defaults to 'active') CSS class (styling)
-6. itemSelectedClass: - (*string*: defaults to 'selected') CSS class (styling)
+5. monitorClass - (*string*: defaults to 'monitor') CSS class (styling)
+6. monitorActiveClass - (*string*: defaults to 'active') CSS class (styling)
+7. itemSelectedClass: - (*string*: defaults to 'selected') CSS class (styling)
+8. itemHoverClass: - (*string*: default to 'hover') CSS class (styling)
 
 #### Returns ####
 
@@ -44,3 +45,15 @@ Append another checkbox set to turn it into multi-select dropdown. Usefull if yo
 #### Arguments ####
 
 1. selector - (*string*) - CSS selector of the wrapper div
+
+## Changelog ##
+### 1.3 ###
+- partial code rewrite
+- added keyboard navigation support
+
+### 1.2 ###
+- added win/mac style images
+- CSS enhancements
+
+### 1.0 ###
+- initial release

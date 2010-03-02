@@ -37,7 +37,7 @@
 	max-height: 230px;
 	overflow: hidden;
 	list-style: none;
-	background-color: #EAF1F6;
+	background-color: #FFF;
 	border-top: 1px solid #ccc;
 	border-left: 3px solid #ccc;
 	border-right: 1px solid #000;
@@ -47,8 +47,8 @@
 .MultiSelect ul li {
 	padding: 0px 3px;
 }
-.MultiSelect ul li:hover,
-.MultiSelect ul li.selected:hover {
+.MultiSelect ul li.hover,
+.MultiSelect ul li.selected.hover {
 	background-color: #6DBAF0;
 	color: white;
 }

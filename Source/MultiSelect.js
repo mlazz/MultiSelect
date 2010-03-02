@@ -3,7 +3,7 @@
 description:     
   - MultiSelect is a MooTools plugin that turns your checkbox set into one single multi-select dropdown menu. MultiSelect is also completely CSS skinnable.
 
-author:
+authors:
   - Blaž Maležič (http://twitter.com/blazmalezic)
 
 license:

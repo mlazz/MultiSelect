@@ -6,6 +6,9 @@ description:
 authors:
   - Blaž Maležič (http://twitter.com/blazmalezic)
 
+version:
+  - 1.3.1
+
 license:
   - MIT-style license
 
@@ -38,6 +41,7 @@ var MultiSelect = new Class({
 		// set global action variables
 		this.active = false;
 		this.action = 'open';
+		this.state = 'closed';
 		
 		// get elements array
 		this.elements = document.getElements(selector);
@@ -161,6 +165,9 @@ var MultiSelect = new Class({
 					self.toggleMenu('close', monitor, list);
 					self.itemHover(list, 'none');
 				}
+				if (self.state == 'opened' && (e.key == 'down' || e.key == 'up')) {
+					e.stop();
+				}
 			}
 		});
 		// replace element content
@@ -228,11 +235,13 @@ var MultiSelect = new Class({
 			sibling.addClass(this.options.itemHoverClass).getElement(this.options.boxes).focus();
 	},
 	
-	toggleMenu: function(state, monitor, list) {
-		if (state == 'open') {
+	toggleMenu: function(toggle, monitor, list) {
+		if (toggle == 'open') {
 			monitor.addClass(this.options.monitorActiveClass);
 			list.setStyle('display', '');
 			this.itemHover(list, 'first');
+			
+			this.state = 'opened';
 		}
 		else {
 			// close all MultiSelect menus
@@ -240,6 +249,7 @@ var MultiSelect = new Class({
 			this.elements.getElement('ul').setStyle('display', 'none');
 
 			this.action = 'open';
+			this.state = 'closed';
 		}
 		
 		if (list.getScrollSize().y > (list.getStyle('max-height').toInt() ? list.getStyle('max-height').toInt() : list.getStyle('height').toInt()))

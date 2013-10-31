@@ -72,9 +72,16 @@ var MultiSelect = new Class({
 					self.action = 'close';
 					self.itemHover(this, 'none');
 				},
-				
 				'mousedown': function(e) { e.stop(); }, // stop text selection
-				'selectstart': function() { return false; }, // stop IE text selection
+		
+				'touchstart': function() { self.action = 'open'; }, 
+                		'touchend': function() { 
+                    			self.action = 'close';
+                    			self.itemHover(this, 'none');
+                		},
+                		'touchstart': function(e) { e.stop(); }, // stop text selection
+                
+                		'selectstart': function() { return false; }, // stop IE text selection
 				
 				'keydown': function(e) {
 					if (e.key == 'esc') {

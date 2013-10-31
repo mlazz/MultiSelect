@@ -6,8 +6,11 @@ description:
 authors:
   - Blaž Maležič (http://twitter.com/blazmalezic)
 
+contributors:
+  - http://twitter.com/miwebguy
+
 version:
-  - 1.3.1
+   - 1.3.2
 
 license:
   - MIT-style license
